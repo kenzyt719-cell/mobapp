@@ -1,0 +1,83 @@
+.task-card {
+  width: 80%;
+  margin: 20px auto;
+  height: 80px;
+border-radius: 16px;
+border: 0.667px solid #F3E8FF;
+box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.10), 0 1px 2px -1px rgba(0, 0, 0, 0.10);
+background: #FFF;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+
+/* Time Box */
+.time-box {
+  width: 80px;
+  height: 70px;
+  background: #e6ddf5;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.time-box h2 {
+  color: #8200DB;
+  font-family: lufga;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* Content */
+.task-content {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.task-title {
+  color: #1E2939;
+  font-family: lufga;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.task-subtitle {
+  color: #4A5565;
+  font-family: lufga;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* Checkbox */
+.task-check {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #c4a7e7;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.task-check.active {
+  background: #8200DB;
+  border-color: #8200DB;
+}
+
+.task-check span {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Checked state */
+.task-card.checked {
+  opacity: 0.6;
+}

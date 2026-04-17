@@ -4,35 +4,27 @@ import Titleandview from "../Components/Layout/Titleandview";
 import StudyChart from "../Components/Layout/StudyChart";
 import UpcomingExams from "../Components/Layout/UpcomingExams";
 import SubjectProgress from "../Components/Layout/SubjectProgress";
-import TodaysPhome from "../Components/Layout/TodaysPhome";
+import TaskList from "../Components/Layout/TaskList";
 
 import Sectionhome from "../Components/Layout/Sectionhome";
 import StudyHeader from "../Components/Layout/StudyHeader";
+import PlanTabs from "../Components/Layout/PlanTabs";
 
-import "./Home.css";
+import "./TodaysPlan.css";
 
-const Home = () => {
+const TodaysPlan = () => {
     return ( <>
     <div className='home'>
 
-<Nav1 />
-<Sectionhome />
 
-<Titleandview 
-  title="Today's Plan"
-  actionText="View"
-  onActionClick={() => console.log("View clicked")}
-/>
-<TodaysPhome />
-<StudyChart />
-<UpcomingExams />
-
-<SubjectProgress />
 
 <StudyHeader />
+<PlanTabs />
+<TaskList />
+
     </div>
 
     </> );
 }
  
-export default Home;
+export default TodaysPlan;

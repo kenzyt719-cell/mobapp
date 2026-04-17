@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Lufga:wght@300;400;600&display=swap");
+
+.header {
+
+    flex-direction: column;
+    display: flex;
+    width: 320px;
+    background: linear-gradient(180deg, #8e2de2, #5f00ba);
+    border-radius: 0 0 30px 30px;
+    padding: 20px;
+    font-family: "Lufga", sans-serif;
+    color: white;
+}
+
+.top {
+
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    margin-right: 130px;
+}
+
+.back {
+  font-size: 20px;
+}
+
+.title {
+  font-size: 22px;
+  margin: 0;
+}
+
+.sub {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.timerBox {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.timerTitle {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.time {
+  font-size: 48px;
+  margin: 10px 0;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.play {
+  background: #ffd600;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.reset {
+  background: rgba(255,255,255,0.2);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
