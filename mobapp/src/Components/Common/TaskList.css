@@ -1,0 +1,65 @@
+.list {
+  margin: auto;
+  width: 320px;
+  font-family: "Lufga", sans-serif;
+  padding: 10px;
+}
+
+/* CARD */
+.card {
+border-radius: 16.257px;
+background: #FFF;
+box-shadow: 0 4.645px 4.645px 0 rgba(0, 0, 0, 0.25);
+  padding: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: scale(1);
+}
+
+/* hover animation */
+.card:hover {
+  transform: scale(1.02);
+  background: #ece6ff;
+}
+
+/* click active */
+.card.active {
+  background: #e0d4ff;
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* text animation */
+.card h3 {
+  margin: 0;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.card p {
+  margin: 5px 0 0;
+  font-size: 12px;
+  color: gray;
+  transition: 0.3s;
+}
+
+/* CIRCLE */
+.circle {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #b388ff;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+/* checked state */
+.circle.checked {
+  background: #b388ff;
+  transform: scale(1.2);
+  box-shadow: 0 0 10px rgba(179, 136, 255, 0.6);
+}

@@ -10,11 +10,12 @@ import Sectionhome from "../Components/Layout/Sectionhome";
 import StudyHeader from "../Components/Layout/StudyHeader";
 import PlanTabs from "../Components/Layout/PlanTabs";
 import TaskListsection from "../Components/Layout/TaskListsection";
+import WeeklyOverview from "../Components/Layout/WeeklyOverview";
 
 
-import "./TodaysPlan.css";
+import "./Weeklyplan.css";
 
-const TodaysPlan = () => {
+const Weeklyplan = () => {
     return ( <>
     <div className='home'>
 
@@ -22,11 +23,12 @@ const TodaysPlan = () => {
 
 <StudyHeader />
 <PlanTabs />
-<TaskListsection />
+<WeeklyOverview />
+
 
     </div>
 
     </> );
 }
  
-export default TodaysPlan;
+export default Weeklyplan;
