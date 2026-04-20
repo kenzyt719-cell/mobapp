@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Lufga:wght@300;400;500;600&display=swap');
+
+.personal-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lufga", sans-serif;
+  background: #f6f7fb;
+}
+
+.personal-card {
+  width: 340px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 22px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.personal-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.personal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.personal-input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #e5e5e5;
+  outline: none;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.personal-input:focus {
+  border-color: #7c5cff;
+}
+
+.personal-img {
+  width: 140px;
+  margin: 18px auto;
+}
+
+.personal-btn {
+  background: #7c5cff;
+  color: white;
+  padding: 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.personal-btn:hover {
+  opacity: 0.9;
+}

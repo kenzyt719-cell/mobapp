@@ -1,100 +1,51 @@
-.container {
-  width: 340px;
-  margin: auto;
-  padding: 20px;
-  background: #f7f3ff;
+body {
+  margin: 0;
   font-family: "Lufga", sans-serif;
-  border-radius: 16px;
+  background: #f7f3ff;
 }
 
-/* Progress */
-.progress {
+.container {
+  height: 100vh;
   display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
+  flex-direction: column;
+  padding: 20px;
 }
 
-.bar {
-  flex: 1;
-  height: 6px;
-  background: #e0d9f5;
-  border-radius: 10px;
-}
-
-.bar.active {
-  background: #7b2cff;
-}
-
-/* Titles */
-.title {
-  font-size: 18px;
-  font-weight: 700;
-  color: #2d1b69;
-  margin: 15px 0 10px;
-}
-
-.subtitle {
-  font-size: 14px;
-  color: #8a84a6;
-  margin-bottom: 15px;
-}
-
-/* Layouts */
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 12px;
+  gap: 10px;
 }
 
-.column {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-/* Cards */
 .card {
   padding: 14px;
-  text-align: center;
   background: #fff;
-  border: 2px solid #e4dbff;
-  border-radius: 14px;
+  border-radius: 12px;
+  border: 2px solid #eee;
+  text-align: center;
   cursor: pointer;
 }
 
 .card.active {
   border-color: #7b2cff;
   background: #f0eaff;
-  color: #7b2cff;
 }
 
-/* Button */
 .btn {
-  margin-top: 25px;
-  background: #ffa500;
-  color: white;
+  margin-top: auto;
+  background: orange;
+  padding: 16px;
   text-align: center;
-  padding: 14px;
   border-radius: 30px;
+  color: white;
   cursor: pointer;
 }
 
-/* Inputs */
-.input {
-  width: 100%;
-  padding: 12px;
-  border-radius: 12px;
-  border: none;
-  margin-bottom: 10px;
-  background: #eee6ff;
-}
-
-/* Emojis */
 .emojiBox {
   display: flex;
   justify-content: space-between;
-  font-size: 24px;
-  margin: 15px 0;
+  font-size: 26px;
+  margin: 20px 0;
 }
 
 .emoji {
@@ -102,20 +53,11 @@
 }
 
 .emoji.active {
-  transform: scale(1.2);
+  transform: scale(1.3);
 }
 
-/* Info */
-.info {
-  background: #eee6ff;
-  padding: 12px;
-  border-radius: 12px;
-  font-size: 13px;
-}
-
-/* Character */
 .charImg {
-  width: 120px;
+  width: 130px;
+  margin: 20px auto;
   display: block;
-  margin: 20px auto 0;
 }
