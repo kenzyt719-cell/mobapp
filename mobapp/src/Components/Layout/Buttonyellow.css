@@ -1,0 +1,80 @@
+.yellowbuttonn {
+  position: relative;
+  width: 349px;
+  padding: 16px 0;
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+
+  background: #fdc700;
+  color: #2c004a;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+/* text */
+.textbuttonyelloo {
+  position: relative;
+  z-index: 2;
+}
+
+/* purple stroke/glow layer */
+.yellowbuttonn::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 18px;
+
+  background: linear-gradient(
+    120deg,
+    transparent,
+    #8b5cf6,
+    transparent
+  );
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* moving shine */
+.yellowbuttonn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(139, 92, 246, 0.7),
+    transparent
+  );
+
+  transform: translateX(-100%);
+  transition: transform 0.6s ease;
+}
+
+/* hover WOW */
+.yellowbuttonn:hover::before {
+  opacity: 1;
+  filter: blur(6px);
+}
+
+.yellowbuttonn:hover::after {
+  transform: translateX(100%);
+}
+
+/* click */
+.yellowbuttonn:active {
+  transform: scale(0.95);
+}
+
+/* disabled */
+.yellowbuttonn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

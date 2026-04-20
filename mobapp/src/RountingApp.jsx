@@ -6,6 +6,7 @@ import TodaysPlan from "./Pages/TodaysPlan";
 import Weeklyplan from "./Pages/Weeklyplan";
 import GradeSelect from "./Pages/GradeSelect";
 import Wellnessmain from "./Pages/Wellnessmain";
+import BreathingStart from "./Pages/BreathingStart";
 
 
 import Onboarding from "./Pages/Onboarding";
@@ -20,6 +21,7 @@ const RoutingApp = () => {
         <Route path="/weekly-plan" element={<Weeklyplan />} />
         <Route path="/grade-select" element={<GradeSelect />} />
         <Route path="/Wellnessmain" element={<Wellnessmain/>} />
+        <Route path="/BreathingStart" element={<BreathingStart/>} />
 
 
         {/* ✅ ONLY ONE ENTRY */}

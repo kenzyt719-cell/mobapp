@@ -1,32 +1,52 @@
-import React, { Component } from 'react';
-import Nav1 from "../Components/Layout/Nav1";
-import Titleandview from "../Components/Layout/Titleandview";
-import StudyChart from "../Components/Layout/StudyChart";
-import UpcomingExams from "../Components/Layout/UpcomingExams";
-import SubjectProgress from "../Components/Layout/SubjectProgress";
-import TodaysPhome from "../Components/Layout/TodaysPhome";
-
-import Sectionhome from "../Components/Layout/Sectionhome";
-import StudyHeader from "../Components/Layout/StudyHeader";
-import PlanTabs from "../Components/Layout/PlanTabs";
-import TaskListsection from "../Components/Layout/TaskListsection";
+import React from "react";
 import Headersmall from "../Components/Layout/Headersmall";
-
-
+import Buttonyellow from "../Components/Layout/Buttonyellow";
 import "./Wellnessmain.css";
 
 const Wellnessmain = () => {
-    return ( <>
-    <div className='home'>
 
+  const handleClick = () => {
+    console.log("Start clicked");
+    // ممكن هنا تعمل navigate أو أي action
+  };
 
+  return (
+    <div className="home">
 
-<StudyHeader />
-<Headersmall />
+      <Headersmall
+        title1="Wellness & Stress Relief"
+        title2="Take care of your mind"
+      />
+
+      <div>
+        <h1 className="h1well">Choose your exercise</h1>
+      </div>
+
+      <div className="boxseswell">
+        <div className="boxwell">
+          <h1 className="boxwellhw">Breathing</h1>
+        </div>
+
+        <div className="boxwell">
+          <h1 className="boxwellhw">Grounding</h1>
+        </div>
+
+        <div className="boxwell">
+          <h1 className="boxwellhw">Mood</h1>
+        </div>
+
+        <div className="boxwell">
+          <h1 className="boxwellhw">Focus</h1>
+        </div>
+      </div>
+
+<div className="buttonymargin">
+      <Buttonyellow text="Start" onClick={handleClick} />
+
+</div>
 
     </div>
+  );
+};
 
-    </> );
-}
- 
 export default Wellnessmain;
