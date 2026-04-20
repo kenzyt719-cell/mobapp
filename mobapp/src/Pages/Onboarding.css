@@ -1,0 +1,121 @@
+.container {
+  width: 340px;
+  margin: auto;
+  padding: 20px;
+  background: #f7f3ff;
+  font-family: "Lufga", sans-serif;
+  border-radius: 16px;
+}
+
+/* Progress */
+.progress {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.bar {
+  flex: 1;
+  height: 6px;
+  background: #e0d9f5;
+  border-radius: 10px;
+}
+
+.bar.active {
+  background: #7b2cff;
+}
+
+/* Titles */
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2d1b69;
+  margin: 15px 0 10px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #8a84a6;
+  margin-bottom: 15px;
+}
+
+/* Layouts */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Cards */
+.card {
+  padding: 14px;
+  text-align: center;
+  background: #fff;
+  border: 2px solid #e4dbff;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+.card.active {
+  border-color: #7b2cff;
+  background: #f0eaff;
+  color: #7b2cff;
+}
+
+/* Button */
+.btn {
+  margin-top: 25px;
+  background: #ffa500;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+/* Inputs */
+.input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  margin-bottom: 10px;
+  background: #eee6ff;
+}
+
+/* Emojis */
+.emojiBox {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  margin: 15px 0;
+}
+
+.emoji {
+  cursor: pointer;
+}
+
+.emoji.active {
+  transform: scale(1.2);
+}
+
+/* Info */
+.info {
+  background: #eee6ff;
+  padding: 12px;
+  border-radius: 12px;
+  font-size: 13px;
+}
+
+/* Character */
+.charImg {
+  width: 120px;
+  display: block;
+  margin: 20px auto 0;
+}

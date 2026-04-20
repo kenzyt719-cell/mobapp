@@ -1,27 +1,78 @@
 import React, { useState } from "react";
 import "./GradeSelect.css";
+import { supabase } from "../supabaseClient";
 
 export default function GradeSelect() {
   const [selectedGrade, setSelectedGrade] = useState(null);
   const [selectedSubjects, setSelectedSubjects] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   const grades = [7, 8, 9, 10, 11, 12];
+
   const subjects = [
-    "Math", "Science", "Arabic", "English",
-    "History", "Geography", "French",
-    "Physics", "Chemistry", "Biology"
+    "Math",
+    "Science",
+    "Arabic",
+    "English",
+    "History",
+    "Geography",
+    "French",
+    "Physics",
+    "Chemistry",
+    "Biology",
   ];
 
   const toggleSubject = (sub) => {
-    if (selectedSubjects.includes(sub)) {
-      setSelectedSubjects(selectedSubjects.filter(s => s !== sub));
-    } else {
-      setSelectedSubjects([...selectedSubjects, sub]);
+    setSelectedSubjects((prev) =>
+      prev.includes(sub)
+        ? prev.filter((s) => s !== sub)
+        : [...prev, sub]
+    );
+  };
+
+  const handleSubmit = async () => {
+    if (!selectedGrade || selectedSubjects.length === 0) {
+      alert("Please select grade and subjects");
+      return;
     }
+
+    setLoading(true);
+
+    const { data, error } = await supabase
+      .from("users_selection_app")
+      .insert([
+        {
+          grade: selectedGrade,
+          subject: selectedSubjects.join(", "), // ✅ FIX HERE
+        },
+      ])
+      .select();
+
+    setLoading(false);
+
+    if (error) {
+      console.log("SUPABASE ERROR:", error);
+      alert(error.message);
+      return;
+    }
+
+    console.log("Saved:", data);
+    alert("Saved successfully 🎉");
+
+    setSelectedGrade(null);
+    setSelectedSubjects([]);
   };
 
   return (
     <div className="container">
+
+      {/* Progress */}
+      <div className="progress">
+        <div className="bar active"></div>
+        <div className="bar active"></div>
+        <div className="bar"></div>
+      </div>
+
       {/* Grades */}
       <h2 className="title">Select Your Grade</h2>
 
@@ -45,7 +96,9 @@ export default function GradeSelect() {
         {subjects.map((sub) => (
           <div
             key={sub}
-            className={`card ${selectedSubjects.includes(sub) ? "active" : ""}`}
+            className={`card ${
+              selectedSubjects.includes(sub) ? "active" : ""
+            }`}
             onClick={() => toggleSubject(sub)}
           >
             {sub}
@@ -53,7 +106,17 @@ export default function GradeSelect() {
         ))}
       </div>
 
-      <div className="btn">Continue</div>
+      {/* Button */}
+      <div
+        className="btn"
+        onClick={handleSubmit}
+        style={{
+          opacity: loading ? 0.6 : 1,
+          pointerEvents: loading ? "none" : "auto",
+        }}
+      >
+        {loading ? "Saving..." : "Continue"}
+      </div>
     </div>
   );
 }

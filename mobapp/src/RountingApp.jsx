@@ -5,6 +5,7 @@ import Home from './Pages/Home';
 import TodaysPlan from './Pages/TodaysPlan';
 import Weeklyplan from './Pages/Weeklyplan';
 import GradeSelect from './Pages/GradeSelect';
+import Subjects from './Pages/Subjects';
 
 
 const RountingApp = () => {
@@ -16,6 +17,7 @@ const RountingApp = () => {
         <Route path="TodaysPlan" element={<TodaysPlan/>} />
         <Route path="Weeklyplan" element={< Weeklyplan/>} />
         <Route path="GradeSelect" element={< GradeSelect/>} />
+        <Route path="Subjects" element={< Subjects/>} />
 
        
       </Routes>
