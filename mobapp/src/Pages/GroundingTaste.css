@@ -1,0 +1,223 @@
+/* GroundingTaste.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Lufga:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ececec;
+  font-family: 'Lufga', sans-serif;
+}
+
+.groundingtaste-container {
+  width: 390px;
+  min-height: 100vh;
+  background: #f8f5fa;
+  margin: auto;
+  padding-bottom: 30px;
+  overflow: hidden;
+}
+
+/* Animation */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-45px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 0 rgba(154, 25, 255, 0);
+  }
+  50% {
+    box-shadow: 0 0 18px rgba(154, 25, 255, 0.35);
+  }
+  100% {
+    box-shadow: 0 0 0 rgba(154, 25, 255, 0);
+  }
+}
+
+/* Header */
+.groundingtaste-header {
+  width: 100%;
+  height: 160px;
+  background: linear-gradient(180deg, #a100ff 0%, #8615ff 100%);
+  border-bottom-left-radius: 45px;
+  border-bottom-right-radius: 45px;
+  padding: 35px 22px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  animation: slideDown 0.6s ease;
+}
+
+.groundingtaste-back {
+  color: white;
+  font-size: 34px;
+  cursor: pointer;
+}
+
+.groundingtaste-header-text h1 {
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.groundingtaste-header-text p {
+  color: white;
+  font-size: 17px;
+}
+
+/* Tabs */
+.taste-tabs {
+  width: 340px;
+  height: 68px;
+  background: white;
+  margin: 24px auto;
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.taste-tab {
+  padding: 14px 18px;
+  border-radius: 18px;
+  font-size: 17px;
+}
+
+.taste-tab.active {
+  background: #9a19ff;
+  color: white;
+}
+
+/* Step */
+.groundingtaste-step {
+  width: 340px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.groundingtaste-step h2 {
+  font-size: 18px;
+  color: #4a5568;
+}
+
+.groundingtaste-step p {
+  font-size: 18px;
+  color: #9a19ff;
+  font-weight: 700;
+}
+
+/* Progress */
+.groundingtaste-progress {
+  width: 340px;
+  height: 10px;
+  background: #eadcff;
+  border-radius: 20px;
+  margin: 14px auto 35px;
+}
+
+.groundingtaste-progress-fill {
+  width: 100%;
+  height: 100%;
+  background: #9a19ff;
+  border-radius: 20px;
+}
+
+/* Circle */
+.groundingtaste-circle {
+  width: 92px;
+  height: 92px;
+  border: 6px solid #9a19ff;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+
+.groundingtaste-circle h1 {
+  font-size: 38px;
+  color: #9a19ff;
+}
+
+/* Text */
+.groundingtaste-text {
+  text-align: center;
+  margin-top: 28px;
+}
+
+.groundingtaste-text h1 {
+  font-size: 34px;
+  color: #1f2937;
+}
+
+.groundingtaste-text p {
+  font-size: 18px;
+  color: #5b6473;
+  margin-top: 10px;
+  padding: 0 22px;
+}
+
+/* Input */
+.groundingtaste-inputs {
+  margin-top: 28px;
+}
+
+.groundingtaste-box {
+  width: 340px;
+  height: 72px;
+  background: white;
+  margin: 14px auto;
+  border-radius: 20px;
+  border: 2px solid #e7d6ff;
+  padding: 0 20px;
+  font-size: 18px;
+  display: block;
+  outline: none;
+  transition: 0.35s ease;
+  font-family: 'Lufga', sans-serif;
+}
+
+.groundingtaste-box:hover,
+.groundingtaste-box:focus {
+  border: 2px solid #9a19ff;
+  transform: translateY(-4px);
+  animation: pulseGlow 1.4s infinite;
+}
+
+/* Button */
+.groundingtaste-btn {
+  width: 300px;
+  height: 68px;
+  background: #f9c400;
+  border-radius: 22px;
+  margin: 38px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.groundingtaste-btn:hover {
+  transform: scale(1.04);
+}
+
+.groundingtaste-btn p {
+  color: white;
+  font-size: 26px;
+  font-weight: 500;
+}

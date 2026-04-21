@@ -12,9 +12,9 @@ export default function Onboarding() {
   const [step, setStep] = useState(1);
   const [rowId, setRowId] = useState(null);
 
-  const navigate = useNavigate(); // 🔥 IMPORTANT
+  const navigate = useNavigate(); 
 
-  // STEP 1
+
   const createUser = async (data) => {
     const { data: res, error } = await supabase
       .from("users_selection_app")
@@ -28,7 +28,7 @@ export default function Onboarding() {
     setStep(2);
   };
 
-  // UPDATE STEPS
+  
   const updateData = async (fields, nextStep) => {
     if (!rowId) return alert("Missing user ID");
 
@@ -42,7 +42,7 @@ export default function Onboarding() {
     setStep(nextStep);
   };
 
-  // 🔥 FINAL STEP (GO HOME)
+
   const finishOnboarding = async (value) => {
     if (!rowId) return alert("Missing user ID");
 
@@ -56,7 +56,7 @@ export default function Onboarding() {
 
     if (error) return alert(error.message);
 
-    // 🎉 GO HOME
+
     navigate("/");
   };
 
