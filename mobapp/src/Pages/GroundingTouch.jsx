@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import "./GroundingTouch.css";
 import { supabase } from "../supabaseClient";
+import { Link } from "react-router-dom";
 
 const GroundingTouch = () => {
   const [item1, setItem1] = useState("");
@@ -45,7 +46,7 @@ const GroundingTouch = () => {
         </div>
       </div>
 
-      {/* Tabs */}
+
       <div className="touch-tabs">
         <div className="touch-tab">Breathing</div>
         <div className="touch-tab active">Grounding</div>
@@ -53,7 +54,7 @@ const GroundingTouch = () => {
         <div className="touch-tab">Mood</div>
       </div>
 
-      {/* Step */}
+
       <div className="groundingtouch-step">
         <h2>Step 2 of 5</h2>
         <p>40%</p>
@@ -63,18 +64,18 @@ const GroundingTouch = () => {
         <div className="groundingtouch-progress-fill"></div>
       </div>
 
-      {/* Circle */}
+
       <div className="groundingtouch-circle">
         <h1>4</h1>
       </div>
 
-      {/* Text */}
+
       <div className="groundingtouch-text">
         <h1>4 Things You Touch</h1>
         <p>Notice 4 things around you that you can touch</p>
       </div>
 
-      {/* Inputs */}
+
       <div className="groundingtouch-inputs">
         <input
           className="groundingtouch-box"
@@ -105,10 +106,15 @@ const GroundingTouch = () => {
         />
       </div>
 
-      {/* Button */}
-      <div className="groundingtouch-btn" onClick={handleSubmit}>
+
+   < Link to="/GroundingHear">
+
+<div className="groundingtouch-btn" onClick={handleSubmit}>
         <p>Next</p>
       </div>
+        </Link>
+
+      
     </div>
   );
 };

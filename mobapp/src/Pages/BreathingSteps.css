@@ -8,6 +8,13 @@
   box-sizing: border-box;
   font-family: "Lufga", sans-serif;
 }
+body{
+   
+    margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* hides horizontal overflow */
+  width: 100%;
+}
 
 .steps-screen {
   width: 390px;

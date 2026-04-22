@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import "./GroundingHear.css";
 import { supabase } from "../supabaseClient";
+import { Link } from "react-router-dom";
 
 const GroundingHear = () => {
   const [item1, setItem1] = useState("");
@@ -32,7 +33,7 @@ const GroundingHear = () => {
 
   return (
     <div className="groundinghear-container">
-      {/* Header */}
+
       <div className="groundinghear-header">
         <p className="groundinghear-back">←</p>
 
@@ -42,7 +43,7 @@ const GroundingHear = () => {
         </div>
       </div>
 
-      {/* Tabs */}
+
       <div className="hear-tabs">
         <div className="hear-tab">Breathing</div>
         <div className="hear-tab active">Grounding</div>
@@ -50,7 +51,7 @@ const GroundingHear = () => {
         <div className="hear-tab">Mood</div>
       </div>
 
-      {/* Step */}
+
       <div className="groundinghear-step">
         <h2>Step 3 of 5</h2>
         <p>60%</p>
@@ -60,18 +61,17 @@ const GroundingHear = () => {
         <div className="groundinghear-progress-fill"></div>
       </div>
 
-      {/* Circle */}
       <div className="groundinghear-circle">
         <h1>3</h1>
       </div>
 
-      {/* Text */}
+
       <div className="groundinghear-text">
         <h1>3 Things You Hear</h1>
         <p>Pause and name 3 sounds you can hear around you</p>
       </div>
 
-      {/* Inputs */}
+
       <div className="groundinghear-inputs">
         <input
           className="groundinghear-box"
@@ -95,10 +95,15 @@ const GroundingHear = () => {
         />
       </div>
 
-      {/* Button */}
-      <div className="groundinghear-btn" onClick={handleSubmit}>
+
+   < Link to="/GroundingSmell">
+
+  <div className="groundinghear-btn" onClick={handleSubmit}>
         <p>Next</p>
       </div>
+        </Link>
+
+    
     </div>
   );
 };

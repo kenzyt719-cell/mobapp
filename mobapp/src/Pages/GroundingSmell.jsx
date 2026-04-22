@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import "./GroundingSmell.css";
 import { supabase } from "../supabaseClient";
+import { Link } from "react-router-dom";
 
 const GroundingSmell = () => {
   const [item1, setItem1] = useState("");
@@ -79,9 +80,13 @@ const GroundingSmell = () => {
         />
       </div>
 
-      <div className="groundingsmell-btn" onClick={handleSubmit}>
+   < Link to="/GroundingTaste">
+
+    <div className="groundingsmell-btn" onClick={handleSubmit}>
         <p>Next</p>
       </div>
+        </Link>
+     
     </div>
   );
 };

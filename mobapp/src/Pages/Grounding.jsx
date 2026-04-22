@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Grounding.css";
 import { supabase } from "../supabaseClient";
 
+import { Link } from "react-router-dom";
 
 const Grounding = () => {
   const [seeitem1, setSeeitem1] = useState("");
@@ -115,9 +116,19 @@ const Grounding = () => {
         />
       </div>
 
+
+     
+
+   < Link to="/GroundingTouch">
+
+
       <div className="grounding-btn" onClick={handleSubmit}>
         <p>Next</p>
       </div>
+
+        </Link>
+
+
     </div>
   );
 };

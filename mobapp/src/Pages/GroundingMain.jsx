@@ -1,11 +1,12 @@
 import React from "react";
 import "./GroundingMain.css";
+import { Link } from "react-router-dom";
 
 const GroundingMain = () => {
   return (
     <div className="grounding-main-container">
 
-      {/* Header */}
+
       <div className="gm-header">
         <div className="gm-back">←</div>
 
@@ -15,7 +16,6 @@ const GroundingMain = () => {
         </div>
       </div>
 
-      {/* Tabs */}
       <div className="gm-tabs">
         <div className="gm-tab">Breathing</div>
         <div className="gm-tab active">Grounding</div>
@@ -23,7 +23,7 @@ const GroundingMain = () => {
         <div className="gm-tab">Mood</div>
       </div>
 
-      {/* Cards */}
+
       <div className="gm-card blue">
         <div className="icon">👁</div>
         <div>
@@ -64,8 +64,10 @@ const GroundingMain = () => {
         </div>
       </div>
 
-      {/* Button */}
+   < Link to="/Grounding">
+
       <div className="gm-btn">Start</div>
+        </Link>
 
     </div>
   );
