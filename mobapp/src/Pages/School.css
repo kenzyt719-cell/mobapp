@@ -1,0 +1,98 @@
+.school-container {
+  padding: 20px;
+  background: #f5f5f5;
+  font-family: sans-serif;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.header {
+  background: linear-gradient(135deg, purple, violet);
+  color: white;
+  position: relative;
+}
+
+.character {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 60px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.grade {
+  margin: 10px 0;
+}
+
+.bar {
+  height: 6px;
+  background: #ddd;
+  border-radius: 10px;
+}
+
+.fill {
+  height: 6px;
+  width: 80%;
+  background: purple;
+  border-radius: 10px;
+}
+
+.attendance {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.time {
+  background: #eee;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 8px;
+}
+
+.break {
+  background: #f3e7c9;
+}
+
+.hw {
+  padding: 10px;
+  border-radius: 10px;
+  margin: 8px 0;
+}
+
+.yellow {
+  background: #fff3cd;
+}
+
+.green {
+  background: #d4edda;
+}
+.mobile-frame {
+
+  width: 390px;
+
+  margin: auto;
+
+  min-height: 100vh;
+
+  background: #f5f5f5;
+
+  border-radius: 20px;
+
+
+
+  box-shadow: 0 0 30px rgba(0,0,0,0.1);
+
+  overflow: hidden;
+
+}

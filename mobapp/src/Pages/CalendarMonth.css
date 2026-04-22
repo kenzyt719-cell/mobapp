@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Lufga:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lufga', sans-serif;
+}
+
+body {
+  background: #eee;
+}
+
+.calendar-container {
+  width: 390px;
+  margin: auto;
+  background: #fbf8ff;
+  min-height: 100vh;
+  padding-bottom: 30px;
+}
+
+/* HEADER */
+.calendar-header {
+  background: linear-gradient(180deg, #9a19ff, #7b14ff);
+  color: white;
+  padding: 35px 20px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  display: flex;
+  gap: 15px;
+}
+
+.back {
+  font-size: 26px;
+}
+
+/* MONTH NAV */
+.month-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 340px;
+  margin: 20px auto;
+}
+
+.arrow {
+  background: white;
+  padding: 6px 10px;
+  border-radius: 10px;
+}
+
+/* TOGGLE */
+.toggle {
+  width: 340px;
+  margin: auto;
+  display: flex;
+  background: white;
+  border-radius: 15px;
+  padding: 6px;
+  justify-content: space-between;
+}
+
+.tab {
+  width: 50%;
+  text-align: center;
+  padding: 10px;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.tab.active {
+  background: #9a19ff;
+  color: white;
+}
+
+/* GRID */
+.weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  width: 340px;
+  margin: 15px auto;
+  font-size: 12px;
+  opacity: 0.7;
+  text-align: center;
+}
+
+.grid {
+  width: 340px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+}
+
+.day {
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.day.active {
+  background: #9a19ff;
+  color: white;
+}
+
+/* EVENTS */
+.section-title {
+  width: 340px;
+  margin: 20px auto 10px;
+}
+
+.event-card {
+  width: 340px;
+  margin: 10px auto;
+  background: white;
+  padding: 12px;
+  border-radius: 15px;
+}
+
+.tag {
+  font-size: 10px;
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+
+.exam { background: #9a19ff; color: white; }
+.task { background: #c4b5fd; }
+
+/* BUTTON */
+.add-btn {
+  width: 300px;
+  margin: 20px auto;
+  background: #ffbf00;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-radius: 15px;
+  font-weight: 600;
+}
+
+
+.quick {
+  width: 340px;
+  margin: auto;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.chips span {
+  background: #eef2ff;
+  padding: 8px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+}

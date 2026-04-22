@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Lufga:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lufga', sans-serif;
+}
+
+body {
+  background: #f6f6f6;
+}
+
+/* =======================
+   CONTAINER
+======================= */
+.mood-container {
+  width: 390px;
+  min-height: 100vh;
+  margin: auto;
+  background: #fbf8ff;
+  padding-bottom: 30px;
+
+  animation: pageFade 0.6s ease-out;
+}
+
+@keyframes pageFade {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =======================
+   HEADER
+======================= */
+.mood-header {
+  background: linear-gradient(180deg, #9a19ff, #7b14ff);
+  color: white;
+  padding: 35px 20px;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+
+  animation: slideDown 0.7s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.back {
+  font-size: 26px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.back:hover {
+  transform: scale(1.2) rotate(-5deg);
+}
+
+.mood-header h1 {
+  font-size: 24px;
+}
+
+.mood-header p {
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+/* =======================
+   TABS
+======================= */
+.mood-tabs {
+  width: 340px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  padding: 10px;
+  border-radius: 18px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+
+  animation: fadeUp 0.8s ease-out;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tab {
+  font-size: 13px;
+  padding: 8px 10px;
+  border-radius: 12px;
+  color: #555;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.tab:hover {
+  transform: translateY(-2px);
+}
+
+.tab.active {
+  background: #9a19ff;
+  color: white;
+  box-shadow: 0 6px 12px rgba(154, 25, 255, 0.3);
+}
+
+/* =======================
+   CARD
+======================= */
+.mood-card {
+  width: 340px;
+  margin: 15px auto;
+  background: white;
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+
+  animation: cardPop 0.9s ease-out;
+}
+
+@keyframes cardPop {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.sub {
+  font-size: 13px;
+  color: #666;
+  margin: 8px 0 15px;
+}
+
+/* =======================
+   MOOD ROW
+======================= */
+.mood-row {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin: 15px 0;
+}
+
+/* EACH MOOD ITEM */
+.mood-item {
+  cursor: pointer;
+  transition: all 0.25s ease;
+  padding: 6px;
+  border-radius: 12px;
+}
+
+.mood-item:hover {
+  transform: translateY(-3px) scale(1.05);
+}
+
+/* ACTIVE MOOD */
+.active-mood {
+  background: rgba(154, 25, 255, 0.1);
+  transform: scale(1.1);
+  border: 1px solid #9a19ff;
+  box-shadow: 0 6px 12px rgba(154, 25, 255, 0.2);
+}
+
+.emoji {
+  font-size: 24px;
+  transition: transform 0.2s ease;
+}
+
+.active-mood .emoji {
+  transform: scale(1.2);
+}
+
+.mood-item p {
+  font-size: 11px;
+  color: #666;
+}
+
+/* =======================
+   BUTTON
+======================= */
+.save-btn {
+  width: 100%;
+  background: #ffbf00;
+  border: none;
+  padding: 14px;
+  border-radius: 14px;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+  animation: fadeUp 1s ease-out;
+}
+
+.save-btn:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(255, 191, 0, 0.3);
+}
+
+.save-btn:active {
+  transform: scale(0.98);
+}
+
+/* =======================
+   TIPS
+======================= */
+.tips {
+  margin-top: 15px;
+  background: #f5f0ff;
+  padding: 12px;
+  border-radius: 12px;
+
+  animation: fadeUp 1.1s ease-out;
+}
+
+.tips h4 {
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.tips p {
+  font-size: 12px;
+  color: #555;
+}

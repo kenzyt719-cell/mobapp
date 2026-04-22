@@ -17,7 +17,7 @@ const Grounding = () => {
         {
           seeitem1,
           seeitem2,
-          seeitem3,
+          seeitem3, 
           seeitem4,
           seeitem5,
         },
@@ -38,7 +38,7 @@ const Grounding = () => {
 
   return (
     <div className="grounding-container">
-      {/* Header */}
+
       <div className="grounding-header">
         <p className="grounding-back">←</p>
 
@@ -48,7 +48,7 @@ const Grounding = () => {
         </div>
       </div>
 
-      {/* Tabs */}
+
       <div className="steps-tabs">
         <div className="steps-tab">Breathing</div>
         <div className="steps-tab active">Grounding</div>
@@ -56,7 +56,7 @@ const Grounding = () => {
         <div className="steps-tab">Mood</div>
       </div>
 
-      {/* Step */}
+
       <div className="grounding-step">
         <h2>Step 1 of 5</h2>
         <p>20%</p>
@@ -66,18 +66,18 @@ const Grounding = () => {
         <div className="grounding-progress-fill"></div>
       </div>
 
-      {/* Circle */}
+
       <div className="grounding-circle">
         <h1>5</h1>
       </div>
 
-      {/* Text */}
+
       <div className="grounding-text">
         <h1>5 Things You See</h1>
         <p>Look around and name 5 things you can see</p>
       </div>
 
-      {/* Inputs */}
+
       <div className="grounding-inputs">
         <input
           className="grounding-box"
@@ -115,7 +115,6 @@ const Grounding = () => {
         />
       </div>
 
-      {/* Button */}
       <div className="grounding-btn" onClick={handleSubmit}>
         <p>Next</p>
       </div>

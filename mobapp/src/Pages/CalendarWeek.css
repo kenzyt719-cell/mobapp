@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Lufga:wght@300;400;500;600;700&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Lufga',sans-serif;
+}
+
+body{
+  background:#eee;
+}
+
+.calendar-week-container{
+  width:390px;
+  min-height:100vh;
+  margin:auto;
+  background:#faf7fb;
+  padding-bottom:30px;
+}
+
+/* HEADER */
+.cw-header{
+  background:linear-gradient(180deg,#9a19ff,#7b14ff);
+  padding:35px 20px;
+  border-bottom-left-radius:35px;
+  border-bottom-right-radius:35px;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  gap:15px;
+}
+
+.cw-back{
+  font-size:28px;
+  cursor:pointer;
+}
+
+.cw-title h1{
+  font-size:28px;
+}
+
+.cw-title p{
+  font-size:13px;
+  opacity:.9;
+}
+
+/* NAV */
+.cw-month-nav{
+  width:340px;
+  margin:18px auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.cw-arrow{
+  width:34px;
+  height:34px;
+  border-radius:10px;
+  background:#fff;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:#9a19ff;
+  box-shadow:0 4px 10px rgba(0,0,0,.05);
+}
+
+.cw-month-nav h3{
+  font-size:22px;
+}
+
+/* TABS */
+.cw-tabs{
+  width:340px;
+  margin:auto;
+  background:#fff;
+  border-radius:18px;
+  padding:6px;
+  display:flex;
+}
+
+.cw-tab{
+  width:50%;
+  text-align:center;
+  padding:12px;
+  border-radius:14px;
+  font-size:14px;
+}
+
+.cw-tab.active{
+  background:#9a19ff;
+  color:#fff;
+}
+
+/* DAY CARD */
+.cw-day-card{
+  width:340px;
+  margin:14px auto;
+  background:#fff;
+  border-radius:18px;
+  padding:14px;
+  box-shadow:0 6px 14px rgba(0,0,0,.05);
+}
+
+.cw-day-top{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:12px;
+}
+
+.cw-day-top h2{
+  font-size:22px;
+  font-weight:500;
+}
+
+.cw-date-box{
+  width:42px;
+  height:52px;
+  border-radius:14px;
+  background:#f3ebff;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  color:#9a19ff;
+}
+
+.cw-date-box span{
+  font-size:10px;
+}
+
+.cw-date-box h4{
+  font-size:18px;
+}
+
+/* EVENTS */
+.cw-event{
+  padding:14px;
+  border-radius:14px;
+  margin-top:10px;
+}
+
+.cw-event p{
+  font-size:12px;
+  margin-bottom:4px;
+}
+
+.cw-event h4{
+  font-size:16px;
+  font-weight:500;
+}
+
+.blue{
+  background:#dbeafe;
+  color:#2457ff;
+}
+
+.green{
+  background:#dcfce7;
+  color:#0d8a42;
+}
+
+.purple{
+  background:#f3e8ff;
+  color:#8b2dff;
+}
+
+.yellow{
+  background:#fef9c3;
+  color:#b77900;
+}
+
+.red{
+  background:#ffe4e6;
+  color:#e11d48;
+}
+
+/* BUTTON */
+.cw-btn{
+  width:320px;
+  height:56px;
+  background:#f9c400;
+  border-radius:16px;
+  margin:18px auto;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:#111;
+  font-weight:600;
+  font-size:18px;
+}
+
+/* QUICK */
+.cw-quick{
+  width:340px;
+  margin:auto;
+  background:#fff;
+  border-radius:18px;
+  padding:16px;
+}
+
+.cw-quick h3{
+  margin-bottom:14px;
+}
+
+.cw-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.tag{
+  padding:10px 14px;
+  border-radius:14px;
+  font-size:13px;
+}
+
+.blue-tag{
+  background:#dbeafe;
+  color:#2457ff;
+}
+
+.green-tag{
+  background:#dcfce7;
+  color:#0d8a42;
+}
+
+.red-tag{
+  background:#ffe4e6;
+  color:#e11d48;
+}
+
+.yellow-tag{
+  background:#fef9c3;
+  color:#b77900;
+}
