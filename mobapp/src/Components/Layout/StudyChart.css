@@ -1,14 +1,12 @@
 @import url('https://fonts.cdnfonts.com/css/lufga');
 
 .study-card {
- 
-      margin: 20px auto;
-    width: 320px;
-border-radius: 16px;
-border: 0.667px solid #F3E8FF;
-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.10), 0 1px 2px -1px rgba(0, 0, 0, 0.10);
-background: #FFF;
-
+  margin: 10px 0;
+  width: 100%; 
+  border-radius: 16px;
+  border: 0.667px solid #F3E8FF;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  background: #FFF;
   padding: 20px;
   font-family: 'Lufga', sans-serif;
 }

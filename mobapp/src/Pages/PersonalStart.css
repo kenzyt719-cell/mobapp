@@ -7,6 +7,9 @@
   align-items: center;
   font-family: "Lufga", sans-serif;
   background: #f6f7fb;
+      width: 340px;
+    margin: auto;
+    padding: 20PX;
 }
 
 .personal-card {

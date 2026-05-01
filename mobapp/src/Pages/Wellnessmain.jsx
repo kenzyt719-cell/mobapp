@@ -7,7 +7,7 @@ const Wellnessmain = () => {
 
   const handleClick = () => {
     console.log("Start clicked");
-    // ممكن هنا تعمل navigate أو أي action
+  
   };
 
   return (

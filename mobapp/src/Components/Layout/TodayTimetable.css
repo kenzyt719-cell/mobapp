@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Lufga:wght@300;400;500;600;700&display=swap');
+
+* {
+  font-family: "Lufga", sans-serif;
+  box-sizing: border-box;
+}
+
+.tt-card {
+  width: 340px;
+  background: #fff;
+  border-radius: 24px;
+  padding: 16px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+}
+
+.tt-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.tt-title h2 {
+  font-size: 18px;
+  color: #0f172a;
+}
+
+.tt-icon {
+  width: 28px;
+  height: 28px;
+  background: #7c3aed;
+  color: #fff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tt-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tt-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  border-radius: 16px;
+  align-items: center;
+}
+
+.tt-item h3 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.tt-item p {
+  margin: 3px 0 0;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.tt-item span {
+  font-size: 12px;
+  color: #475569;
+}
+
+.purple { background: #f3e8ff; }
+.lavender { background: #efe7ff; }
+.break { background: #fff8dc; }

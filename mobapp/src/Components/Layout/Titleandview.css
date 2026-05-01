@@ -1,24 +1,21 @@
-.tileandviewh1{
-    color: #1E2939;
-font-family: lufga;
-font-size: 20px;
-font-style: normal;
-font-weight: 700;
-line-height: 28px; /* 140% */
-letter-spacing: -0.449px;
+.titledivs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
 }
-.tileandviewh2{
- color: #9810FA;
-font-family: lufga;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: 20px; /* 142.857% */
-letter-spacing: -0.15px;
+
+.tileandviewh1 {
+  color: #1E2939;
+  font-family: lufga;
+  font-size: 20px;
+  font-weight: 700;
 }
-.titledivs{
-    justify-content: center;
-    display: flex;
-    margin: auto;
-    gap: 210px;
+
+.tileandviewh2 {
+  color: #9810FA;
+  font-family: lufga;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
 }

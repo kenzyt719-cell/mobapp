@@ -20,7 +20,8 @@ import Mood from "./Pages/Mood";
 import CalendarMonth from "./Pages/CalendarMonth";
 import CalendarWeek from "./Pages/CalendarWeek";
 import School from "./Pages/School";
-
+import SmartLessonFinder from "./Pages/SmartLessonFinder";
+import Community from "./Pages/Community";
 
 
 import Onboarding from "./Pages/Onboarding";
@@ -49,6 +50,9 @@ const RoutingApp = () => {
         <Route path="/CalendarMonth" element={<CalendarMonth/>} />
         <Route path="/CalendarWeek" element={<CalendarWeek/>} />
         <Route path="/School" element={<School/>} />
+        <Route path="/SmartLessonFinder" element={<SmartLessonFinder/>} />
+        <Route path="/Community" element={<Community/>} />
+
   
 
 

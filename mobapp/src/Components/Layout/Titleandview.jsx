@@ -5,14 +5,13 @@ const Titleandview = ({ title, actionText, onActionClick }) => {
   return (
     <div className="titledivs">
       <h1 className="tileandviewh1">{title}</h1>
-      
-      <h1 
+
+      <h2
         className="tileandviewh2"
         onClick={onActionClick}
-        style={{ cursor: "pointer" }}
       >
         {actionText}
-      </h1>
+      </h2>
     </div>
   );
 };

@@ -1,0 +1,81 @@
+.workshop-card {
+
+border-radius: 13.703px;
+border: 0.653px solid #F3E8FF;
+background: #FFF;
+box-shadow: 0 0.979px 2.936px 0 rgba(0, 0, 0, 0.10), 0 0.979px 1.958px -0.979px rgba(0, 0, 0, 0.10);
+  padding: 14px;
+  font-family: "Lufga", sans-serif;
+}
+
+.workshop-img {
+  width: 100%;
+  height: 150px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.title {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 10px 0;
+  color: #1c1c1c;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
+}
+
+.row p {
+  margin: 0;
+  font-size: 14px;
+  color: #6f6f6f;
+}
+
+.bottom {
+  margin-top: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.badge {
+  background: #e6d9ff;
+  color: #7a3cff;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 13px;
+}
+
+.spots {
+  font-size: 13px;
+  color: #7a7a7a;
+}
+
+.join-btn {
+  background: #ffbf00;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}

@@ -1,0 +1,95 @@
+/* AttendanceSection.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Lufga:wght@400;500;600;700&display=swap");
+
+.attendanceRecordWrapper * {
+  box-sizing: border-box;
+  font-family: "Lufga", sans-serif;
+}
+
+.attendanceRecordCard {
+  width: 340px;
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 20px;
+  margin-top: 20px;
+  border: 1px solid #ece7f1;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.attendanceRecordHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.attendanceRecordIcon {
+  color: #9a28ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.attendanceRecordTitle {
+  margin: 1px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #1c1c28;
+}
+
+.attendanceRecordGrid {
+  display: flex;
+  gap: 12px;
+}
+
+.attendanceRecordBox {
+  flex: 1;
+  height: 105px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.attendanceRecordNumber {
+  margin: 0 0 8px;
+  font-size: 34px;
+  font-weight: 500;
+}
+
+.attendanceRecordLabel {
+  margin: 0;
+  font-size: 14px;
+  color: #666874;
+}
+
+/* Present */
+
+.attendanceRecordPresent {
+  background: #edf8f1;
+}
+
+.attendanceRecordPresent .attendanceRecordNumber {
+  color: #18b45b;
+}
+
+
+.attendanceRecordAbsent {
+  background: #faeeee;
+}
+
+.attendanceRecordAbsent .attendanceRecordNumber {
+  color: #ff1d1d;
+}
+
+
+
+.attendanceRecordLate {
+  background: #f8f4df;
+}
+
+.attendanceRecordLate .attendanceRecordNumber {
+  color: #d68900;
+}

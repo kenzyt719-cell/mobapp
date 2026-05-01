@@ -1,0 +1,309 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Lufga:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5f1f8;
+  font-family: "Lufga", sans-serif;
+}
+
+/* CARD */
+.grades-card {
+  width: 340px;
+      margin-top: 20px;
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 20px;
+  border: 1px solid #ece7f1;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+
+  animation: cardFade 0.8s ease;
+}
+
+/* CARD FADE */
+@keyframes cardFade {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* HEADER */
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.icon-box {
+  color: #9a28ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.12);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.card-header h2 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #1c1c28;
+  margin: 0;
+}
+
+/* LIST */
+.grades-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ========================= */
+/* NEW ANIMATION SYSTEM */
+/* ========================= */
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* SUBJECT CARD */
+.subject-card {
+  background: #f5effa;
+  border-radius: 20px;
+  padding: 16px;
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    background 0.35s ease;
+
+  position: relative;
+  overflow: hidden;
+
+  opacity: 0;
+  animation: slideDown 0.6s ease forwards;
+}
+
+/* STAGGER EFFECT (DIV BY DIV) */
+.subject-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.subject-card:nth-child(2) {
+  animation-delay: 0.25s;
+}
+
+.subject-card:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.subject-card:nth-child(4) {
+  animation-delay: 0.55s;
+}
+
+.subject-card:nth-child(5) {
+  animation-delay: 0.7s;
+}
+
+/* SHINE EFFECT */
+.subject-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.35),
+    transparent
+  );
+
+  transform: translateX(-100%);
+  transition: 0.7s;
+}
+
+.subject-card:hover::before {
+  transform: translateX(100%);
+}
+
+.subject-card:hover {
+  transform: translateY(-5px) scale(1.01);
+  box-shadow: 0 10px 24px rgba(153, 40, 255, 0.14);
+  background: #f7f1fc;
+}
+
+/* TOP ROW */
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.top-row h3 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: #20202a;
+}
+
+/* GRADE INFO */
+.grade-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.grade {
+  font-size: 16px;
+  font-weight: 600;
+  color: #9a28ff;
+
+  animation: popIn 0.7s ease;
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.percent {
+  font-size: 14px;
+  color: #6d6d78;
+}
+
+/* ARROW */
+.arrow {
+  font-size: 18px;
+  font-weight: 600;
+
+  animation: floatArrow 1.8s ease-in-out infinite;
+}
+
+@keyframes floatArrow {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-2px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.arrow.green {
+  color: #1bb85c;
+}
+
+.arrow.gray {
+  color: #8b8b95;
+}
+
+.arrow.red {
+  color: #ff3b30;
+}
+
+/* PROGRESS */
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #ddc7ff;
+  border-radius: 100px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 100px;
+  position: relative;
+
+  background: linear-gradient(
+    90deg,
+    #8d1fff,
+    #bb63ff,
+    #8d1fff
+  );
+
+  background-size: 200% 100%;
+
+  transform: scaleX(0);
+  transform-origin: left;
+
+  animation:
+    fillAnimation 1.3s ease forwards,
+    shimmer 2.5s linear infinite;
+}
+
+.progress-fill::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 22px;
+  height: 100%;
+
+  background: rgba(255, 255, 255, 0.8);
+
+  filter: blur(6px);
+  border-radius: 100px;
+}
+
+/* FILL */
+@keyframes fillAnimation {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/* SHIMMER */
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}

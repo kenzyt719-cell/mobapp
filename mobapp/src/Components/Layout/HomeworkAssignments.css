@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lufga:wght@300;400;500;600;700&display=swap');
+
+* {
+  font-family: "Lufga", sans-serif;
+  box-sizing: border-box;
+}
+
+.hw-card {
+  width: 340px;
+  background: #fff;
+  border-radius: 24px;
+  padding: 16px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+}
+
+.hw-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.hw-title h2 {
+  font-size: 18px;
+  color: #0f172a;
+}
+
+.hw-icon {
+  width: 28px;
+  height: 28px;
+  background: #7c3aed;
+  color: #fff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hw-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hw-item {
+  padding: 12px;
+  border-radius: 16px;
+}
+
+.hw-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hw-item h3 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.hw-item p {
+  margin: 6px 0;
+  font-size: 13px;
+}
+
+.hw-item small {
+  color: #64748b;
+}
+
+.btn {
+  font-size: 11px;
+  color: #7c3aed;
+  cursor: pointer;
+}
+
+.yellow {
+  background: #fff9db;
+  border: 2px solid #ffe58f;
+}
+
+.green {
+  background: #ecfdf5;
+  border: 2px solid #86efac;
+}
+
+.done h3 {
+  color: #16a34a;
+}
