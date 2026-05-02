@@ -1,9 +1,12 @@
 import React, { useState } from "react";
+import "./LearningStart.css"; 
+
+import imgCharacter4 from "../Assets/imgcharcgter2.png";
 
 export default function LearningStart({ onNext }) {
   const [selected, setSelected] = useState("");
 
-  const options = ["Practice","Reading","Videos","Listening"];
+  const options = ["Practice", "Reading", "Videos", "Listening"];
 
   const handleNext = () => {
     if (!selected) return alert("Select option");
@@ -11,26 +14,33 @@ export default function LearningStart({ onNext }) {
   };
 
   return (
-    <div className="container">
+    <div className="learning-page">
 
-      <h2>Learning style</h2>
+      <div className="learning-card">
+        <h2 className="learning-title">Learning style</h2>
 
-      <div className="column">
-        {options.map(o => (
-          <div
-            key={o}
-            className={`card ${selected === o ? "active" : ""}`}
-            onClick={() => setSelected(o)}
-          >
-            {o}
-          </div>
-        ))}
+        <div className="learning-list">
+          {options.map((o) => (
+            <div
+              key={o}
+              className={`learning-card-item ${selected === o ? "active" : ""}`}
+              onClick={() => setSelected(o)}
+            >
+              {o}
+            </div>
+          ))}
+        </div>
+
+        <button className="learning-btn" onClick={handleNext}>
+          Continue
+        </button>
       </div>
 
-      <div className="btn" onClick={handleNext}>
-        Continue
-      </div>
-
+      <img
+        src={imgCharacter4}
+        className="learning-img"
+        alt="character"
+      />
     </div>
   );
 }

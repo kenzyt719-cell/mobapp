@@ -1,9 +1,13 @@
 import React, { useState } from "react";
+import "./StressStart.css";
+
+// (optional) add image like other screens if you want
+import imgCharacter3 from "../Assets/imgcharcgter3.png";
 
 export default function StressStart({ onNext }) {
   const [selected, setSelected] = useState("");
 
-  const emojis = ["😊","🙂","😐","😟","😰"];
+  const emojis = ["😊", "🙂", "😐", "😟", "😰"];
 
   const handleNext = () => {
     if (!selected) return alert("Select feeling");
@@ -11,26 +15,35 @@ export default function StressStart({ onNext }) {
   };
 
   return (
-    <div className="container">
+    <div className="stress-page">
 
-      <h2>Stress level</h2>
+      {/* CARD */}
+      <div className="stress-card">
+        <h2 className="stress-title">Stress level</h2>
 
-      <div className="emojiBox">
-        {emojis.map(e => (
-          <span
-            key={e}
-            className={selected === e ? "active emoji" : "emoji"}
-            onClick={() => setSelected(e)}
-          >
-            {e}
-          </span>
-        ))}
+        <div className="emoji-box">
+          {emojis.map((e) => (
+            <span
+              key={e}
+              className={`emoji ${selected === e ? "active" : ""}`}
+              onClick={() => setSelected(e)}
+            >
+              {e}
+            </span>
+          ))}
+        </div>
+
+        <button className="stress-btn" onClick={handleNext}>
+          Continue
+        </button>
       </div>
 
-      <div className="btn" onClick={handleNext}>
-        Continue
-      </div>
-
+      {/* IMAGE OUTSIDE CARD */}
+      <img
+        src={imgCharacter3}
+        className="stress-img"
+        alt="character"
+      />
     </div>
   );
 }

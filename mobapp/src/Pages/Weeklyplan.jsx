@@ -11,6 +11,7 @@ import StudyHeader from "../Components/Layout/StudyHeader";
 import PlanTabs from "../Components/Layout/PlanTabs";
 import TaskListsection from "../Components/Layout/TaskListsection";
 import WeeklyOverview from "../Components/Layout/WeeklyOverview";
+import BottomNav from "../Components/Layout/BottomNav";
 
 
 import "./Weeklyplan.css";
@@ -19,12 +20,18 @@ const Weeklyplan = () => {
     return ( <>
     <div className='home'>
 
+<BottomNav />
 
 
 <StudyHeader />
 <PlanTabs />
 <WeeklyOverview />
 
+<div style={{ marginBottom: "100px" }}>
+
+
+
+</div>
 
     </div>
 

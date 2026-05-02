@@ -236,3 +236,35 @@ body{
   background:#fef9c3;
   color:#b77900;
 }
+.calendarToggleWrap {
+  width: 340px;
+  margin: auto;
+  display: flex;
+  background: white;
+  border-radius: 15px;
+  padding: 6px;
+  justify-content: space-between;
+}
+
+/* base tab */
+.calendarTab {
+  text-align: center;
+  padding: 10px;
+  border-radius: 12px;
+  font-size: 14px;
+  width: 100%;
+}
+
+/* link wrapper */
+.calendarToggleLink {
+  width: 50%;
+  display: block;
+  text-decoration: none;
+}
+
+/* active tab */
+.calendarTabActive {
+  width: 160px;
+  background: #9a19ff;
+  color: white;
+}

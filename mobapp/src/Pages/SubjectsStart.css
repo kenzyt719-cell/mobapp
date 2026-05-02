@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Lufga:wght@300;400;500;600&display=swap');
+
+.subjects-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lufga", sans-serif;
+  background: #f6f7fb;
+  width: 390px;
+  margin: auto;
+  padding: 20px;
+  gap: 18px;
+}
+
+.subjects-card {
+  width: 340px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 22px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.subjects-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.subjects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.subject-card {
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #e5e5e5;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 14px;
+}
+
+/* hover effect */
+.subject-card:hover {
+  border-color: #7c5cff;
+}
+
+/* ✅ SELECTED (PURPLE) */
+.subject-card.active {
+  background: #7c5cff;
+  color: white;
+  border-color: #7c5cff;
+}
+
+.subjects-btn {
+  margin-top: 15px;
+  width: 100%;
+  background: #FFAA00; /* ✅ BUTTON YELLOW */
+  color: white;
+  padding: 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 500;
+  border: none;
+  transition: 0.2s;
+}
+
+.subjects-btn:hover {
+  background: #e69900;
+  transform: translateY(-1px);
+}
+
+.subjects-img {
+  width: 160px;
+  height: auto;
+}

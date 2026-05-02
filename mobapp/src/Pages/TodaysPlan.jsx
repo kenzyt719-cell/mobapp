@@ -8,9 +8,10 @@ import TodaysPhome from "../Components/Layout/TodaysPhome";
 
 import Sectionhome from "../Components/Layout/Sectionhome";
 import StudyHeader from "../Components/Layout/StudyHeader";
-import PlanTabs from "../Components/Layout/PlanTabs";
+import PlanTabs2 from "../Components/Layout/PlanTabs2";
 import TaskListsection from "../Components/Layout/TaskListsection";
 
+import BottomNav from "../Components/Layout/BottomNav";
 
 import "./TodaysPlan.css";
 
@@ -18,10 +19,11 @@ const TodaysPlan = () => {
     return ( <>
     <div className='home'>
 
+<BottomNav />
 
 
 <StudyHeader />
-<PlanTabs />
+<PlanTabs2 />
 <TaskListsection />
 
     </div>

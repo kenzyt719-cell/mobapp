@@ -80,7 +80,8 @@ body{
 .smell-tab{
   padding:14px 18px;
   border-radius:18px;
-  font-size:17px;
+  font-size: 13px;
+
 }
 
 .smell-tab.active{

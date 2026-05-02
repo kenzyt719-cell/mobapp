@@ -40,10 +40,62 @@ const GroundingSmell = () => {
       </div>
 
       <div className="smell-tabs">
-        <div className="smell-tab">Breathing</div>
-        <div className="smell-tab active">Grounding</div>
-        <div className="smell-tab">Focus</div>
-        <div className="smell-tab">Mood</div>
+        
+        <Link
+      
+    to="/BreathingStart"
+      
+          className="touch-tab"
+      
+          style={{ textDecoration: "none",  }}
+      
+        >
+      
+          Breathing
+      
+        </Link>
+      
+        <Link
+      
+          to="/Grounding"
+      
+          className="touch-tab active"
+      
+          style={{ textDecoration: "none",  }}
+      
+        >
+      
+          Grounding
+      
+        </Link>
+      
+        <Link
+      
+          to="/Focus"
+      
+          className="touch-tab"
+      
+          style={{ textDecoration: "none", }}
+      
+        >
+      
+          Focus
+      
+        </Link>
+      
+        <Link
+      
+          to="/Mood"
+      
+          className="touch-tab"
+      
+          style={{ textDecoration: "none",  }}
+      
+        >
+      
+          Mood
+      
+        </Link>
       </div>
 
       <div className="groundingsmell-step">

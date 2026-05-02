@@ -36,10 +36,62 @@ const GroundingTaste = () => {
       </div>
 
       <div className="taste-tabs">
-        <div className="taste-tab">Breathing</div>
-        <div className="taste-tab active">Grounding</div>
-        <div className="taste-tab">Focus</div>
-        <div className="taste-tab">Mood</div>
+     
+     <Link
+   
+    to="/BreathingStart"
+   
+       className="touch-tab"
+   
+       style={{ textDecoration: "none",  }}
+   
+     >
+   
+       Breathing
+   
+     </Link>
+   
+     <Link
+   
+       to="/Grounding"
+   
+       className="touch-tab active"
+   
+       style={{ textDecoration: "none",  }}
+   
+     >
+   
+       Grounding
+   
+     </Link>
+   
+     <Link
+   
+       to="/Focus"
+   
+       className="touch-tab"
+   
+       style={{ textDecoration: "none", }}
+   
+     >
+   
+       Focus
+   
+     </Link>
+   
+     <Link
+   
+       to="/Mood"
+   
+       className="touch-tab"
+   
+       style={{ textDecoration: "none",  }}
+   
+     >
+   
+       Mood
+   
+     </Link>
       </div>
 
       <div className="groundingtaste-step">

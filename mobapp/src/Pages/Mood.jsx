@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./Mood.css";
+import { Link } from "react-router-dom";
+
 
 const moods = [
   { emoji: "😢", label: "Very Sad", value: "very_sad" },
@@ -20,7 +22,7 @@ const Mood = () => {
   return (
     <div className="mood-container">
 
-      {/* HEADER */}
+
       <div className="mood-header">
         <div className="back">←</div>
         <div>
@@ -29,12 +31,64 @@ const Mood = () => {
         </div>
       </div>
 
-      {/* TABS */}
+
       <div className="mood-tabs">
-        <div className="tab">Breathing</div>
-        <div className="tab">Grounding</div>
-        <div className="tab">Focus</div>
-        <div className="tab active">Mood</div>
+               
+  <Link
+
+    to="/BreathingStart"
+
+    className="touch-tab"
+
+    style={{ textDecoration: "none",  }}
+
+  >
+
+    Breathing
+
+  </Link>
+
+  <Link
+
+    to="/Grounding"
+
+    className="touch-tab "
+
+    style={{ textDecoration: "none",  }}
+
+  >
+
+    Grounding
+
+  </Link>
+
+  <Link
+
+    to="/Focus"
+
+    className="touch-tab"
+
+    style={{ textDecoration: "none", }}
+
+  >
+
+    Focus
+
+  </Link>
+
+  <Link
+
+    to="/Mood"
+
+    className="touch-tab active"
+
+    style={{ textDecoration: "none",  }}
+
+  >
+
+    Mood
+
+  </Link>
       </div>
 
       {/* CARD */}

@@ -17,10 +17,62 @@ const GroundingMain = () => {
       </div>
 
       <div className="gm-tabs">
-        <div className="gm-tab">Breathing</div>
-        <div className="gm-tab active">Grounding</div>
-        <div className="gm-tab">Focus</div>
-        <div className="gm-tab">Mood</div>
+         
+         <Link
+       
+    to="/BreathingStart"
+       
+           className="touch-tab"
+       
+           style={{ textDecoration: "none",  }}
+       
+         >
+       
+           Breathing
+       
+         </Link>
+       
+         <Link
+       
+           to="/Grounding"
+       
+           className="touch-tab active"
+       
+           style={{ textDecoration: "none",  }}
+       
+         >
+       
+           Grounding
+       
+         </Link>
+       
+         <Link
+       
+           to="/Focus"
+       
+           className="touch-tab"
+       
+           style={{ textDecoration: "none", }}
+       
+         >
+       
+           Focus
+       
+         </Link>
+       
+         <Link
+       
+           to="/Mood"
+       
+           className="touch-tab"
+       
+           style={{ textDecoration: "none",  }}
+       
+         >
+       
+           Mood
+       
+         </Link>
       </div>
 
 

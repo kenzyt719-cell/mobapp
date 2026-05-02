@@ -4,7 +4,9 @@ import "./BreathingSteps.css";
 
 const BreathingSteps = () => {
   return (
+          <div className="mainbreathdiv{">
     <div className="steps-screen">
+
       <div className="steps-tabs">
         <div className="steps-tab active">Breathing</div>
         <div className="steps-tab">Grounding</div>
@@ -48,6 +50,7 @@ const BreathingSteps = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

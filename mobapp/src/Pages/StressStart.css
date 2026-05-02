@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Lufga:wght@300;400;500;600&display=swap');
+
+.stress-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lufga", sans-serif;
+  background: #f6f7fb;
+  width: 390px;
+  margin: auto;
+  padding: 20px;
+  gap: 18px;
+}
+
+.stress-card {
+  width: 340px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 22px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.stress-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.emoji-box {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.emoji {
+  font-size: 26px;
+  cursor: pointer;
+  transition: 0.2s;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.emoji:hover {
+  transform: scale(1.2);
+}
+
+.emoji.active {
+  background: #7c5cff;
+  transform: scale(1.2);
+}
+
+.stress-btn {
+  margin-top: 10px;
+  width: 100%;
+  background: #FFAA00;
+  color: white;
+  padding: 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 500;
+  border: none;
+  transition: 0.2s;
+}
+
+.stress-btn:hover {
+  background: #e69900;
+  transform: translateY(-1px);
+}
+
+.stress-img {
+  width: 160px;
+  height: auto;
+}

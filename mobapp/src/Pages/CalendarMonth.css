@@ -61,7 +61,7 @@ body {
 }
 
 .tab {
-  width: 50%;
+  /* width: 50%; */
   text-align: center;
   padding: 10px;
   border-radius: 12px;
@@ -69,6 +69,7 @@ body {
 }
 
 .tab.active {
+      width: 160px;
   background: #9a19ff;
   color: white;
 }

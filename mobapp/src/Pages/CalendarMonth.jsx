@@ -1,10 +1,11 @@
 import React from "react";
 import "./CalendarMonth.css";
+import { Link } from "react-router-dom";
 
 const CalendarMonth = () => {
   return (
     <div className="calendar-container">
-
+ 
 
       <div className="calendar-header">
         <div className="back">←</div>
@@ -25,7 +26,24 @@ const CalendarMonth = () => {
 
 
       <div className="toggle">
+          <Link
+
+  to="/CalendarWeek"
+
+  style={{
+
+    textDecoration: "none",
+
+
+
+    width: "50%",
+
+  }}
+
+>
+
         <div className="tab">Week View</div>
+     </Link>
         <div className="tab active">Month View</div>
       </div>
 

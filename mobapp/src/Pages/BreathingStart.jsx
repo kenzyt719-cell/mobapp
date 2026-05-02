@@ -1,15 +1,73 @@
 // BreathingStart.jsx
 import React from "react";
 import "./BreathingStart.css";
+import { Link } from "react-router-dom";
 
 const BreathingStart = () => {
   return (
-    <div className="breathing-start-screen">
+
+      <div className="mainbreathdiv">
+    
+    <div className="breathing-start-screen ">
+
+
+
       <div className="breathing-tabs">
-        <div className="breathing-tab active">Breathing</div>
-        <div className="breathing-tab">Grounding</div>
-        <div className="breathing-tab">Focus</div>
-        <div className="breathing-tab">Mood</div>
+        <Link
+      
+    to="/BreathingStart"
+      
+          className="touch-tab"
+      
+          style={{ textDecoration: "none",  }}
+      
+        >
+      
+          Breathing
+      
+        </Link>
+      
+        <Link
+      
+          to="/Grounding"
+      
+          className="touch-tab active"
+      
+          style={{ textDecoration: "none",  }}
+      
+        >
+      
+          Grounding
+      
+        </Link>
+      
+        <Link
+      
+          to="/Focus"
+      
+          className="touch-tab"
+      
+          style={{ textDecoration: "none", }}
+      
+        >
+      
+          Focus
+      
+        </Link>
+      
+        <Link
+      
+          to="/Mood"
+      
+          className="touch-tab"
+      
+          style={{ textDecoration: "none",  }}
+      
+        >
+      
+          Mood
+      
+        </Link>
       </div>
 
       <div className="breathing-card">
@@ -33,6 +91,7 @@ const BreathingStart = () => {
         </div>
       </div>
     </div>
+          </div>
   );
 };
 

@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import "./PersonalStart.css";
 
+// image import (make sure path is correct)
+import imgCharacter from "../Assets/imgcharcgter1.png";
+
 export default function PersonalStart({ onNext }) {
   const [name, setName] = useState("");
   const [age, setAge] = useState("");
@@ -58,12 +61,17 @@ export default function PersonalStart({ onNext }) {
           />
         </div>
 
-        <img src="/imgcharcgter1.png" className="personal-img" alt="" />
-
         <button className="personal-btn" onClick={handleNext}>
           Continue
         </button>
       </div>
+
+      {/* 👇 IMAGE OUTSIDE THE CARD */}
+      <img
+        src={imgCharacter}
+        className="personal-img"
+        alt="character"
+      />
     </div>
   );
 }

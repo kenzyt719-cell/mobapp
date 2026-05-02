@@ -4,7 +4,7 @@
 
     flex-direction: column;
     display: flex;
-    width: 320px;
+    width: 360px;
     background: linear-gradient(180deg, #8e2de2, #5f00ba);
     border-radius: 0 0 30px 30px;
     padding: 20px;
@@ -24,12 +24,14 @@
   font-size: 20px;
 }
 
-.title {
+.titleaaa {
+      color: #ffffff;
   font-size: 22px;
   margin: 0;
 }
 
-.sub {
+.subaaaa {
+      color: #ffffff;
   font-size: 14px;
   opacity: 0.8;
 }
@@ -43,7 +45,7 @@
 }
 
 .timerTitle {
-  font-size: 14px;
+  font-size: 26px;
   opacity: 0.8;
 }
 

@@ -1,7 +1,12 @@
 /* BreathingStart.css */
 
 @import url('https://fonts.cdnfonts.com/css/lufga');
+.mainbreathdiv{
 
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
 * {
   margin: 0;
   padding: 0;

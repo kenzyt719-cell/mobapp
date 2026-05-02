@@ -1,5 +1,6 @@
 import React from "react";
 import "./CalendarWeek.css";
+import { Link } from "react-router-dom";
 
 const CalendarWeek = () => {
   return (
@@ -21,11 +22,21 @@ const CalendarWeek = () => {
         <div className="cw-arrow">›</div>
       </div>
 
+<div className="calendarToggleWrap">
 
-      <div className="cw-tabs">
-        <div className="cw-tab active">Week View</div>
-        <div className="cw-tab">Month View</div>
-      </div>
+    <div className="calendarTab calendarTabActive">Week View</div>
+
+  <Link
+    to="/CalendarMonth"
+    style={{
+      textDecoration: "none",
+      width: "50%",
+    }}
+    className="calendarToggleLink"
+  >
+  <div className="calendarTab ">Month View</div>
+  </Link>
+</div>
 
 
       <div className="cw-day-card">

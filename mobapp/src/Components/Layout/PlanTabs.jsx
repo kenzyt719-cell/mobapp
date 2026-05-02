@@ -1,13 +1,20 @@
 import React from "react";
 import "./PlanTabs.css";
+import { Link } from "react-router-dom";
 
 const PlanTabs = () => {
   return (
     <div className="tabsContainer">
       <div className="tabs">
-        <p className="active">Today's Plan</p>
-        <p>Weekly Plan</p>
-      </div>
+        
+          <Link to="/todays-plan" style={{ textDecoration: "none" }}>
+               
+               <p >Today's Plan</p>
+       </Link>
+          <Link to="/weekly-plan" style={{ textDecoration: "none" }}>
+              
+               <p className="active" >Weekly Plan</p>
+       </Link>     </div>
 
       <div className="dateRow">
         <p className="arrow">‹</p>
@@ -15,9 +22,12 @@ const PlanTabs = () => {
         <p className="arrow">›</p>
       </div>
 
-      <div className="calendarBtn">
-        <p>View Calendar</p>
-      </div>
+   <Link to="/CalendarMonth" style={{ textDecoration: "none" }}>
+  <div className="calendarBtn">
+    <p>View Calendar</p>
+  </div>
+</Link>
+    
 
       <div className="dayRow">
         <h3>Tuesday</h3>

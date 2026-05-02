@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Lufga:wght@300;400;500;600&display=swap');
 
 .personal-page {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
+  flex-direction: column; /* stack card + image */
   justify-content: center;
   align-items: center;
   font-family: "Lufga", sans-serif;
   background: #f6f7fb;
-      width: 340px;
-    margin: auto;
-    padding: 20PX;
+  width: 390px;
+  margin: auto;
+  padding: 20px;
+  gap: 18px; /* space between card and image */
 }
 
 .personal-card {
@@ -47,12 +49,8 @@
   border-color: #7c5cff;
 }
 
-.personal-img {
-  width: 140px;
-  margin: 18px auto;
-}
-
 .personal-btn {
+  margin-top: 12px;
   background: #7c5cff;
   color: white;
   padding: 12px;
@@ -60,8 +58,14 @@
   cursor: pointer;
   font-weight: 500;
   transition: 0.2s;
+  border: none;
 }
 
 .personal-btn:hover {
   opacity: 0.9;
+}
+
+.personal-img {
+  width: 310px;
+  height: auto;
 }

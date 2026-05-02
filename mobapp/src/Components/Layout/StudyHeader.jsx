@@ -7,10 +7,11 @@ const StudyHeader = () => {
       <div className="top">
         <p className="back">←</p>
         <div>
-          <h1 className="title">Study Plan</h1>
-          <p className="sub">AI-Generated Schedule</p>
+          <h1 className="titleaaa">Study Plan</h1>
+          <p className="subaaaaa">AI-Generated Schedule</p>
         </div>
       </div>
+      
 
       <div className="timerBox">
         <p className="timerTitle">Study Session Timer</p>

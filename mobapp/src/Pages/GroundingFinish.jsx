@@ -2,7 +2,7 @@
 import React from "react";
 import "./GroundingFinish.css";
 import characterfinish from "../Assets/chacterfnish.png";
-
+import { Link } from "react-router-dom";
 const GroundingFinish = () => {
   return (
     <div className="finish-container">
@@ -18,10 +18,62 @@ const GroundingFinish = () => {
 
 
       <div className="finish-tabs">
-        <div className="finish-tab">Breathing</div>
-        <div className="finish-tab active">Grounding</div>
-        <div className="finish-tab">Focus</div>
-        <div className="finish-tab">Mood</div>
+         
+  <Link
+
+    to="/BreathingStart"
+
+    className="touch-tab"
+
+    style={{ textDecoration: "none",  }}
+
+  >
+
+    Breathing
+
+  </Link>
+
+  <Link
+
+    to="/Grounding"
+
+    className="touch-tab active"
+
+    style={{ textDecoration: "none",  }}
+
+  >
+
+    Grounding
+
+  </Link>
+
+  <Link
+
+    to="/Focus"
+
+    className="touch-tab"
+
+    style={{ textDecoration: "none", }}
+
+  >
+
+    Focus
+
+  </Link>
+
+  <Link
+
+    to="/Mood"
+
+    className="touch-tab"
+
+    style={{ textDecoration: "none",  }}
+
+  >
+
+    Mood
+
+  </Link>
       </div>
 
 

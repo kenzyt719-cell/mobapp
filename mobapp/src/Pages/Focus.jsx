@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./Focus.css";
+import { Link } from "react-router-dom";
+
 
 const Focus = () => {
   const [time, setTime] = useState(25 * 60);
@@ -64,10 +66,61 @@ const Focus = () => {
 
       {/* TABS */}
       <div className="focus-tabs">
-        <div className="tab">Breathing</div>
-        <div className="tab">Grounding</div>
-        <div className="tab active">Focus</div>
-        <div className="tab">Mood</div>
+   <Link
+ 
+    to="/BreathingStart"
+ 
+     className="touch-tab"
+ 
+     style={{ textDecoration: "none",  }}
+ 
+   >
+ 
+     Breathing
+ 
+   </Link>
+ 
+   <Link
+ 
+     to="/Grounding"
+ 
+     className="touch-tab "
+ 
+     style={{ textDecoration: "none",  }}
+ 
+   >
+ 
+     Grounding
+ 
+   </Link>
+ 
+   <Link
+ 
+     to="/Focus"
+ 
+     className="touch-tab active"
+ 
+     style={{ textDecoration: "none", }}
+ 
+   >
+ 
+     Focus
+ 
+   </Link>
+ 
+   <Link
+ 
+     to="/Mood"
+ 
+     className="touch-tab"
+ 
+     style={{ textDecoration: "none",  }}
+ 
+   >
+ 
+     Mood
+ 
+   </Link>
       </div>
 
       {/* CARD */}

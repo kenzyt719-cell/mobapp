@@ -45,10 +45,61 @@ const GroundingHear = () => {
 
 
       <div className="hear-tabs">
-        <div className="hear-tab">Breathing</div>
-        <div className="hear-tab active">Grounding</div>
-        <div className="hear-tab">Focus</div>
-        <div className="hear-tab">Mood</div>
+        
+        <Link
+     to="/BreathingStart"
+      
+          className="touch-tab"
+      
+          style={{ textDecoration: "none",  }}
+      
+        >
+      
+          Breathing
+      
+        </Link>
+      
+        <Link
+      
+          to="/Grounding"
+      
+          className="touch-tab active"
+      
+          style={{ textDecoration: "none",  }}
+      
+        >
+      
+          Grounding
+      
+        </Link>
+      
+        <Link
+      
+          to="/Focus"
+      
+          className="touch-tab"
+      
+          style={{ textDecoration: "none", }}
+      
+        >
+      
+          Focus
+      
+        </Link>
+      
+        <Link
+      
+          to="/Mood"
+      
+          className="touch-tab"
+      
+          style={{ textDecoration: "none",  }}
+      
+        >
+      
+          Mood
+      
+        </Link>
       </div>
 
 

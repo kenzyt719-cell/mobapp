@@ -6,12 +6,15 @@ import TodaysPhome from "../Components/Layout/TodaysPhome";
 import StudyChart from "../Components/Layout/StudyChart";
 import UpcomingExams from "../Components/Layout/UpcomingExams";
 import SubjectProgress from "../Components/Layout/SubjectProgress";
+import BottomNav from "../Components/Layout/BottomNav";
+import { Link } from "react-router-dom";
+
 
 const Home = () => {
   return (
     <div className="home">
 
-
+<BottomNav />
       <div className="header-card">
 
         <div className="header-top">
@@ -22,6 +25,7 @@ const Home = () => {
 
           <div className="bell">🔔</div>
         </div>
+        
 
         <div className="progress-box">
           <div className="progress-top">
@@ -38,34 +42,52 @@ const Home = () => {
           </p>
         </div>
 
+
         <img src="/character.png" alt="" className="character" />
       </div>
 
 
       <div className="actions">
 
-        <div className="action purple">
+
+
+ <Link to="/SmartLessonFinder" >
+   <div className="action purple">
           📘
           <p>Study</p>
         </div>
+           </Link> 
+
+     
 
         <div className="action yellow">
           💬
           <p>Study Buddy</p>
         </div>
 
-        <div className="action gray">
+ <Link to="/Wellnessmain" >
+   <div className="action gray">
           🧘
           <p>Wellness</p>
         </div>
+           </Link> 
+
+     
 
       </div>
 
      
-      <div className="section">
+     
+     
+       <div className="section">
+       <Link to="/todays-plan" >
+
         <Titleandview title="Today's Plan" actionText="View All" />
+           </Link> 
         <TodaysPhome />
       </div>
+  
+    
 
 
       <div className="section">

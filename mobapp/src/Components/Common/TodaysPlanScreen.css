@@ -1,0 +1,54 @@
+.zqScreenWrapA {
+  width: 320px;
+  margin: auto;
+  font-family: "Lufga", sans-serif;
+  padding: 15px;
+}
+
+.zqTabsA {
+  display: flex;
+  background: #eee;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.zqTabItemA {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+}
+
+.zqActiveA {
+  background: linear-gradient(90deg, #8e2de2, #5f00ba);
+  color: white;
+  border-radius: 20px;
+}
+
+.zqDateRowA {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.zqArrowA {
+  font-size: 20px;
+}
+
+.zqCalendarBtnA {
+  margin: 10px auto;
+  background: #eee;
+  width: fit-content;
+  padding: 8px 15px;
+  border-radius: 20px;
+}
+
+.zqDayRowA {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.zqEditA {
+  color: purple;
+}
