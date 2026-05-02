@@ -5,7 +5,6 @@ import "./Wellnessmain.css";
 
 import BottomNav from "../Components/Layout/BottomNav";
 
-
 import { Link } from "react-router-dom";
 
 const Wellnessmain = () => {
@@ -17,7 +16,8 @@ const Wellnessmain = () => {
 
   return (
     <div className="home">
-<BottomNav />
+      <BottomNav />
+
       <Headersmall
         title1="Wellness & Stress Relief"
         title2="Take care of your mind"

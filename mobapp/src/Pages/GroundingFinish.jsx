@@ -3,9 +3,12 @@ import React from "react";
 import "./GroundingFinish.css";
 import characterfinish from "../Assets/chacterfnish.png";
 import { Link } from "react-router-dom";
+import BottomNav from "../Components/Layout/BottomNav";
+
 const GroundingFinish = () => {
   return (
     <div className="finish-container">
+      <BottomNav />
 
       <div className="finish-header">
         <p className="finish-back">←</p>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./Focus.css";
 import { Link } from "react-router-dom";
+import BottomNav from "../Components/Layout/BottomNav";
 
 
 const Focus = () => {
@@ -54,6 +55,8 @@ const Focus = () => {
 
   return (
     <div className="focus-container">
+            <BottomNav />
+      
 
       {/* HEADER */}
       <div className="focus-header">

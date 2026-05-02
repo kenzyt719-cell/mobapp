@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Mood.css";
 import { Link } from "react-router-dom";
+import BottomNav from "../Components/Layout/BottomNav";
 
 
 const moods = [
@@ -21,6 +22,7 @@ const Mood = () => {
 
   return (
     <div className="mood-container">
+      <BottomNav />
 
 
       <div className="mood-header">

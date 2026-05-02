@@ -3,6 +3,7 @@ import "./Grounding.css";
 import { supabase } from "../supabaseClient";
 
 import { Link } from "react-router-dom";
+import BottomNav from "../Components/Layout/BottomNav";
 
 const Grounding = () => {
   const [seeitem1, setSeeitem1] = useState("");
@@ -39,6 +40,7 @@ const Grounding = () => {
 
   return (
     <div className="grounding-container">
+      <BottomNav />
 
       <div className="grounding-header">
         <p className="grounding-back">←</p>

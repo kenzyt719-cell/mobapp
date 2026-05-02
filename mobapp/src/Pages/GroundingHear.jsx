@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import "./GroundingHear.css";
 import { supabase } from "../supabaseClient";
 import { Link } from "react-router-dom";
+import BottomNav from "../Components/Layout/BottomNav";
 
 const GroundingHear = () => {
   const [item1, setItem1] = useState("");
@@ -33,6 +34,7 @@ const GroundingHear = () => {
 
   return (
     <div className="groundinghear-container">
+      <BottomNav />
 
       <div className="groundinghear-header">
         <p className="groundinghear-back">←</p>

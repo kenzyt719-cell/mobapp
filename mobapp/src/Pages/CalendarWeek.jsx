@@ -1,10 +1,12 @@
 import React from "react";
 import "./CalendarWeek.css";
 import { Link } from "react-router-dom";
+import BottomNav from "../Components/Layout/BottomNav";
 
 const CalendarWeek = () => {
   return (
     <div className="calendar-week-container">
+      <BottomNav />
 
       <div className="cw-header">
         <div className="cw-back">←</div>

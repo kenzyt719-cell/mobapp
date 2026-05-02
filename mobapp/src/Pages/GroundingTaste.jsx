@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import "./GroundingTaste.css";
 import { supabase } from "../supabaseClient";
 import { Link } from "react-router-dom";
+import BottomNav from "../Components/Layout/BottomNav";
 
 const GroundingTaste = () => {
   const [item, setItem] = useState("");
@@ -26,6 +27,8 @@ const GroundingTaste = () => {
 
   return (
     <div className="groundingtaste-container">
+            <BottomNav />
+      
       <div className="groundingtaste-header">
         <p className="groundingtaste-back">←</p>
 

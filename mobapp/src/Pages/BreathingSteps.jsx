@@ -1,10 +1,13 @@
 // BreathingSteps.jsx
 import React from "react";
 import "./BreathingSteps.css";
+import BottomNav from "../Components/Layout/BottomNav";
 
 const BreathingSteps = () => {
   return (
           <div className="mainbreathdiv{">
+                  <BottomNav />
+            
     <div className="steps-screen">
 
       <div className="steps-tabs">

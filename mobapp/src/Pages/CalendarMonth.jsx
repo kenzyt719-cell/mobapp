@@ -1,11 +1,13 @@
 import React from "react";
 import "./CalendarMonth.css";
 import { Link } from "react-router-dom";
+import BottomNav from "../Components/Layout/BottomNav";
 
 const CalendarMonth = () => {
   return (
     <div className="calendar-container">
  
+      <BottomNav />
 
       <div className="calendar-header">
         <div className="back">←</div>

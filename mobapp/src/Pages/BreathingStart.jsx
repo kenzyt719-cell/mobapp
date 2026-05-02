@@ -2,11 +2,13 @@
 import React from "react";
 import "./BreathingStart.css";
 import { Link } from "react-router-dom";
+import BottomNav from "../Components/Layout/BottomNav";
 
 const BreathingStart = () => {
   return (
 
       <div className="mainbreathdiv">
+          <BottomNav />
     
     <div className="breathing-start-screen ">
 

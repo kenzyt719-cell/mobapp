@@ -4,9 +4,13 @@ import "./WelcomeScreen.css";
 import logo from "../Assets/logomoufakermain.svg";
 import character from "../Assets/moufakrmainfirstcharchter.svg";
 import { Link } from "react-router-dom";
+import BottomNav from "../Components/Layout/BottomNav";
+
 const WelcomeScreen = () => {
   return (
     <div className="welcomeScreen">
+            <BottomNav />
+      
       <div className="welcomeContent">
         <h1 className="welcomeTitle animate fadeUp delay1">
           Welcome to

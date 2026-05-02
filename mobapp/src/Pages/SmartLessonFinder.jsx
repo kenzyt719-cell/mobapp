@@ -7,6 +7,7 @@ import recompic1 from "../Assets/recompic1.png";
 import recompic2 from "../Assets/recompic2.png";
 import recompic3 from "../Assets/recompic3.png";
 import recompic4 from "../Assets/recompic4.png";
+import BottomNav from "../Components/Layout/BottomNav";
 
 export default function SmartLessonFinder() {
   const lessons = [
@@ -68,6 +69,8 @@ export default function SmartLessonFinder() {
 
   return (
     <div className="phone">
+            <BottomNav />
+      
       <div className="container">
         <Headersmall
           title1="Smart Lesson Finder"

@@ -1,11 +1,13 @@
 import React from "react";
 import "./GroundingMain.css";
 import { Link } from "react-router-dom";
+import BottomNav from "../Components/Layout/BottomNav";
 
 const GroundingMain = () => {
   return (
     <div className="grounding-main-container">
 
+      <BottomNav />
 
       <div className="gm-header">
         <div className="gm-back">←</div>
